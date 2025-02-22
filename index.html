@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <h1><img src="./images/book-open-variant.svg" alt="book">Library</h1>
+        <button id="add-book"><img src="./images/book-plus.svg" alt="add book"></button>
+    </header>
+    <main>
+        <dialog>
+            <form action="#" method="dialog">
+                <h2>Add Book</h2>
+                <div>
+                    <input type="text" id="title" name="title" placeholder="Title" maxlength="50" required>
+                </div>
+                <div>
+                    <input type="text" id="author" name="author" placeholder="Author" required>
+                </div>
+                <div>
+                    <input type="number" id="pages" name="pages" placeholder="Pages" required>
+                </div>
+                <div>
+                    <label for="read">Read?</label>
+                    <input type="checkbox" id="read" name="read">
+                </div>
+                <button id="add-book">Submit</button>
+            </form>
+          </dialog>
+        <div id="card-container"></div>
+    </main>
+    <footer>
+        <div>
+            created by <a target="_blank" rel="noopener noreferrer"
+            href="https://github.com/selogan">selogan<img src="./images/github-mark.svg" alt=""></a>
+            for <a target="_blank" rel="noopener noreferrer" href="https://www.theodinproject.com/">The Odin Project</a>
+        </div>
+    </footer>
+</body>
+</html>
